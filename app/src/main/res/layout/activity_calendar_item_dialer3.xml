@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/meetingTime2"
+        style="@style/calendarFont"
+        android:layout_width="wrap_content"
+        android:layout_height="70pt"
+        android:layout_alignEnd="@+id/bridgeLabel"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/rowlistcolor"
+        android:text="Meeting Time"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="70pt"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/meetingTime2"
+        android:background="@color/rowlistcolor">
+
+        <TextView
+            android:id="@+id/meetingTitle2"
+            style="@style/calendarFont"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:scrollbars="vertical" />
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/errorMsgText"
+        style="@style/errorFont"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/meetingTime2"
+        android:padding="2dp"
+         />
+
+    <TextView
+        android:id="@+id/bridgeLabel"
+        style="@style/settingLabels"
+        android:layout_width="50pt"
+        android:layout_height="15pt"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/errorMsgText"
+        android:text="Bridge #" />
+
+    <Spinner
+        android:id="@+id/bridgeNumber"
+        style="@style/spinnerEditTextFont"
+
+        android:layout_height="15pt"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/errorMsgText"
+        android:layout_toEndOf="@+id/bridgeLabel" />
+
+    <TextView
+        android:id="@+id/meetingIDLabel"
+        style="@style/settingLabels"
+        android:layout_width="50pt"
+        android:layout_height="15pt"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bridgeLabel"
+        android:gravity="bottom"
+
+        android:text="Meeting #" />
+
+    <EditText
+        android:id="@+id/meetingID"
+        style="@style/EditTextFont"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/bridgeNumber"
+        android:layout_toEndOf="@+id/meetingIDLabel"
+        android:ems="10"
+        android:inputType="number"
+        android:lines="1"
+        android:maxLength="10"
+        android:maxWidth="10dp" />
+
+    <TextView
+        android:id="@+id/meetingPassLabel"
+        style="@style/settingLabels"
+        android:layout_width="50pt"
+        android:layout_height="15pt"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/meetingIDLabel"
+        android:gravity="bottom"
+        android:text="Pass Code #" />
+
+    <EditText
+        android:id="@+id/meetingCode"
+        style="@style/EditTextFont"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/meetingID"
+        android:layout_toEndOf="@+id/meetingPassLabel"
+        android:ems="10"
+        android:inputType="number"
+        android:lines="1"
+        android:maxLength="10"
+        android:maxWidth="10dp" />
+
+    <ImageButton
+        android:id="@+id/dial"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/meetingCode"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:onClick="dialNumber"
+        android:src="@drawable/icon_phone" />
+
+</RelativeLayout>

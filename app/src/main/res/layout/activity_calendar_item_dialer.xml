@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="6dip"
+    android:paddingLeft="4dip"
+    tools:context=".activities.CalendarItemDialActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="70pt"
+        android:padding="2dip"
+        android:paddingBottom="8dip"
+        android:background="@color/ripple_material_dark">
+
+        <TextView
+            android:id="@+id/meetingTime2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="6dip"
+            android:text="Meeting Time"
+            android:textStyle="bold"
+            style="@style/calendarFont"
+            />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_toEndOf="@id/meetingTime2">
+
+            <TextView
+                android:id="@+id/meetingTitle2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:scrollbars="vertical"
+                style="@style/calendarFont" />
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="4pt"
+        >
+        <TableRow>
+            <TextView
+                android:id="@+id/errorMsgText"
+                android:paddingBottom="6dp"
+                style="@style/errorFont"
+                android:layout_span="2"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/bridgeLabel"
+                android:layout_width="50pt"
+                style="@style/settingLabels"
+                android:text="Bridge #" />
+            <Spinner
+                android:id="@+id/bridgeNumber"
+                style="@style/spinnerEditTextFont"
+                android:layout_height="15pt"
+                />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/meetingIDLabel"
+                android:layout_width="50pt"
+                style="@style/settingLabels"
+
+                android:text="Meeting #" />
+
+            <EditText
+                android:id="@+id/meetingID"
+                android:layout_width="40pt"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                style="@style/EditTextFont"
+                />
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/meetingPassLabel"
+                android:layout_width="70pt"
+                android:text="Pass Code #"
+                style="@style/settingLabels"
+                />
+            <EditText
+                android:id="@+id/meetingCode"
+                android:layout_width="40pt"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                style="@style/EditTextFont" />
+        </TableRow>
+
+        <TableRow  >
+            <ImageButton
+                android:id="@+id/dial"
+                android:text="Dial Number"
+                android:onClick="dialNumber"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:src="@drawable/icon_phone"
+                style="?android:attr/borderlessButtonStyle"
+                 />
+
+        </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCEDC8">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:paddingBottom="6pt"
+        android:paddingLeft="4pt"
+        android:paddingRight="4pt"
+        android:paddingTop="6pt">
+
+        <TableRow android:paddingBottom="2pt">
+            <TextView
+                style="@style/errorFont"
+                android:id="@+id/mesgBox"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                style="@style/dateFont"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:layout_span="2"
+                android:paddingBottom="4pt"
+                android:text="PROVIDE DIAL IN NUMBERS"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="2pt"
+            android:paddingTop="2pt">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#689F38"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="2px"
+                    android:layout_weight="1"
+                    android:background="#689F38" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/primaryBridgeLabel"
+                style="@style/settingLabels"
+                android:text="Primary Bridge Number" />
+
+            <EditText
+                android:id="@+id/primaryBridgeNumber"
+                style="@style/EditTextFont"
+                android:layout_width="45pt"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:inputType="number"
+                android:ems="10" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/secondaryBridgeLabel"
+                style="@style/settingLabels"
+                android:text="Secondary Bridge Number" />
+
+            <EditText
+                android:id="@+id/secondaryBridgeNumber"
+                style="@style/EditTextFont"
+                android:layout_width="45pt"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:layout_gravity="right"
+                android:ems="10" />
+        </TableRow>
+
+        <TableRow android:padding="5pt"></TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/dateFont"
+                android:layout_gravity="left"
+                android:layout_span="2"
+                android:gravity="center"
+                android:paddingBottom="4pt"
+                android:text="MY BRIDGE DETAILS (OPTIONAL)"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:paddingBottom="2pt"
+            android:paddingTop="2pt">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#689F38"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="2px"
+                    android:layout_weight="1"
+                    android:background="#689F38" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/myBridgeLabel"
+                style="@style/settingLabels"
+                android:text="Meeting ID #" />
+
+            <EditText
+                android:id="@+id/myBridgeNumber"
+                style="@style/EditTextFont"
+                android:inputType="number"
+                android:layout_width="45pt"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:ems="10" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/hostCodeLabel"
+                style="@style/settingLabels"
+                android:text="Host Code #" />
+
+            <EditText
+                android:id="@+id/hostCode"
+                style="@style/EditTextFont"
+                android:inputType="number"
+                android:layout_width="45pt"
+                android:layout_gravity="right"
+                android:layout_height="wrap_content"
+                android:ems="10" />
+        </TableRow>
+
+        <TableRow android:paddingTop="8pt">
+
+            <Button
+                android:id="@+id/saveSettings"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_span="2"
+                android:gravity="center"
+                android:padding="8pt"
+                android:text="Save" />
+        </TableRow>
+
+    </TableLayout>
+
+
+
+</RelativeLayout>

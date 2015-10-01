@@ -1,0 +1,76 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/actionbarcolor</item>
+    </style>
+
+
+
+    <style name="WindowTitleBackground">
+        <item name="android:colorBackground">@color/titlebackgroundcolor</item>
+        <item name="android:windowBackground">@color/titlebackgroundcolor</item>
+    </style>
+    <style name="CodeFont" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textcolor</item>
+        <item name="android:textSize">8pt</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="errorFont" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/errorcolor</item>
+        <item name="android:textSize">6pt</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="calendarFont" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textcolor</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="dateFont" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textcolor</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="settingLabels" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textcolor</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="EditTextFont" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textcolor</item>
+        <item name="android:textSize">6pt</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:layout_gravity">right</item>
+    </style>
+
+    <style name="spinnerEditTextFont" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textcolor</item>
+        <item name="android:textSize">8pt</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+</resources>
